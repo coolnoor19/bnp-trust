@@ -22,7 +22,7 @@ export default function Programs() {
       icon: <UtensilsCrossed size={80} strokeWidth={1.5} />,
       title: "Food & Nutrition",
       desc: "Providing nutritious meals to underprivileged families.",
-      img: "/program2.jpg",
+      img: "/education.jpg",
       hueA: 20,
       hueB: 40,
     },
