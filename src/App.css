@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+ .funky-text {
+  background: linear-gradient(90deg, #0F72CE, #26B66F, #0F72CE);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  background-size: 200% 200%;
+  animation: funkyMove 4s linear infinite;
+}
+
+@keyframes funkyMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes bgGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-bgGlow {
+  background-size: 200% 200%;
+  animation: bgGlow 8s ease-in-out infinite;
+}
+
+/* make sure primary type uses your usual sans for body */
+body { font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+/* optional card smoothing */
+section img { transition: transform .35s ease; }
+section img:hover { transform: scale(1.02); }
+
+/* small tonal tweak for the mission heading when using the handwritten font */
+h2[aria-hidden="true"] { font-weight: 700; }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
