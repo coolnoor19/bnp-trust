@@ -10,7 +10,7 @@ const Footer = () => {
         {/* LOGO + ABOUT */}
         <div className="space-y-4">
           <motion.img
-            src="/bnplogo.png"
+            src="/bnplogo1.png"
             alt="BNP Logo"
             className="h-14"
             initial={{ opacity: 0, y: 20 }}

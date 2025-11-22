@@ -31,9 +31,9 @@ const Navbar = () => {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <img
-            src="/bnplogo.png"
+            src="/bnplogo1.png"
             alt="BNP Logo"
-            className="h-11 w-auto drop-shadow-sm"
+            className="h-14 w-auto drop-shadow-sm"
           />
           <span className="text-xl font-semibold text-[#0F72CE] tracking-wide">
             BNP
