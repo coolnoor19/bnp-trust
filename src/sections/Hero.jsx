@@ -22,9 +22,9 @@ const Hero = () => {
   return (
     <div
       className="w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('/bnplogo.png')`, // <-- add your background here
-      }}
+    //   style={{
+    //     backgroundImage: `url('/bnplogo.png')`, // <-- add your background here
+    //   }}
     >
       {/* Soft overlay */}
       <div className="w-full min-h-screen bg-[#BFE2F3]/90 px-6 md:px-12 lg:px-20 pt-32 pb-20 flex justify-center">
