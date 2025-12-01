@@ -22,12 +22,12 @@ const Hero = () => {
   return (
     <div
       className="w-full bg-cover bg-center bg-no-repeat"
-    //   style={{
-    //     backgroundImage: `url('/bnplogo.png')`, // <-- add your background here
-    //   }}
+      style={{
+        backgroundImage: `url('/201.png')`, // <-- add your background here
+      }}
     >
       {/* Soft overlay */}
-      <div className="w-full min-h-screen bg-[#BFE2F3]/90 px-6 md:px-12 lg:px-20 pt-32 pb-20 flex justify-center">
+      <div className="w-full min-h-screen bg-[#BFE2F3]/20 px-6 md:px-12 lg:px-20 pt-32 pb-20 flex justify-center">
         <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-28">
 
           {/* LEFT CONTENT */}
@@ -37,7 +37,7 @@ const Hero = () => {
               variants={textVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              className="text-4xl md:text-5xl font-extrabold text-black leading-tight"
+              className="text-4xl md:text-5xl font-extrabold text-white leading-tight "
             >
               Together, We Can Change Lives
             </motion.h1>
@@ -57,7 +57,7 @@ const Hero = () => {
               variants={textVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              className="text-md md:text-lg text-black/80 mt-6 leading-relaxed"
+              className="text-md md:text-lg text-white/80 mt-6 leading-relaxed"
             >
               Empowering underprivileged <span className="font-bold">communities through education, healthcare,</span>and social support—one step, one smile, one life at a time.
               <span className="font-bold"> one smile, one life at a time </span>
