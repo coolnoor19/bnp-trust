@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", href: "/" },
+  // { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Mission", href: "/mission" },
   { name: "Awards", href: "/awards" },
   { name: "Programs", href: "/board-of-trustees" },
-  { name: "Privacy", href: "/privacy" },
+  // { name: "Privacy", href: "/privacy" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
             className="h-14 w-auto drop-shadow-sm"
           />
           <span className="text-xl font-semibold text-[#0F72CE] tracking-wide">
-            BNP
+            BNP Charitable Trust
           </span>
         </motion.a>
 
@@ -57,7 +57,7 @@ const Navbar = () => {
 
           {/* Donate Button */}
           <motion.a
-            href="#donate"
+            href="/donate"
             className="px-4 py-2 bg-[#0F72CE] text-white rounded-lg shadow-md hover:bg-[#0A4C8B] text-sm font-medium"
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.97 }}

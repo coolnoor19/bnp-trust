@@ -36,17 +36,17 @@ const BoardOfTrusteesSection = () => {
     {
       name: "Niranjan Patnaik",
       role: "Founder & Chairman",
-      img: "/CBI-AAP-2025.jpg",
+      img: "/np.jpg",
     },
     {
-      name: "Anjali Mishra",
+      name: "Niranjan Patnaik",
       role: "Co-Founder, Women Empowerment Lead",
-      img: "/trustee2.jpg",
+      img: "/np.jpg",
     },
     {
-      name: "Rohit Sen",
+      name: "Niranjan Patnaik",
       role: "Finance & Operations Director",
-      img: "/trustee3.jpg",
+      img: "/np.jpg",
     },
   ];
 
@@ -54,7 +54,7 @@ const BoardOfTrusteesSection = () => {
     <section
       className="w-full py-24 md:py-32 relative overflow-hidden"
       style={{
-        background: "url('/bg.png') center/cover no-repeat",
+        background: "url('/.png') center/cover no-repeat",
       }}
     >
       {/* Decorative assets */}
@@ -113,7 +113,7 @@ const BoardOfTrusteesSection = () => {
           </motion.div>
 
           <motion.img
-            src="/CBI-AAP-2025.jpg"
+            src="/Niranjan.jpg"
             alt="Trustee Leader"
             className="rounded-3xl w-full h-[400px] object-cover shadow-xl"
             initial={{ opacity: 0, x: 40 }}
@@ -156,7 +156,7 @@ const BoardOfTrusteesSection = () => {
 
       </div>
       <WhatWeDo/>
-<Impact/>
+
 <StoriesOfChange/>
     </section>
   );

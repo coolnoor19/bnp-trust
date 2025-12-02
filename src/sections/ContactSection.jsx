@@ -107,7 +107,7 @@ const ContactSection = () => {
               <div className="flex items-start gap-4">
                 <MapPin size={28} className="text-[#0F72CE]" />
                 <p className="text-lg leading-relaxed">
-                  123 Hope Street, Mumbai, Maharashtra, India
+                  N2, Block N2, Irc, Nayapalli, Bhubaneswar, Odisha 751015 , India
                 </p>
               </div>
 
@@ -117,9 +117,10 @@ const ContactSection = () => {
             <div className="mt-8 rounded-2xl overflow-hidden shadow-md">
               <iframe
                 title="BNP Location"
-                src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=20.2916969,85.8075064&z=17&output=embed"
                 className="w-full h-64 border-0"
                 loading="lazy"
+                allowFullScreen
               ></iframe>
             </div>
           </motion.div>

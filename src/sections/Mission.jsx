@@ -192,16 +192,29 @@ export default function Mission() {
             </div>
 
             <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.12 }}
-              viewport={{ once: true }}
-              className="text-gray-700"
-            >
-              We partner with communities, educators, and local leaders to
-              create sustainable programs that uplift the most vulnerable —
-              ensuring dignity, opportunity, and lasting impact.
-            </motion.p>
+  initial={{ opacity: 0, y: 18 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.12 }}
+  viewport={{ once: true }}
+  className="text-gray-700 leading-relaxed"
+>
+  We work hand-in-hand with communities, educators, frontline workers, and
+  local leaders to build sustainable pathways of hope. Our mission is rooted
+  in dignity — ensuring that every child, woman, and family has access to
+  opportunities that empower them to rise above hardship with confidence.
+  <br /><br />
+  Through education, nutrition, healthcare, and community development, we
+  nurture environments where people are not just supported, but strengthened
+  to shape their own futures. We believe true impact is created not through
+  temporary aid, but through long-term transformation — the kind that uplifts
+  generations.
+  <br /><br />
+  Every program we initiate is designed to restore dignity, amplify
+  potential, and enable communities to stand resilient, united, and hopeful.
+  Together, we are building a movement where compassion becomes action,
+  action becomes change, and change becomes a better world for all.
+</motion.p>
+
           </div>
 
           {/* right column: bento grid (2x2 on large screens) */}

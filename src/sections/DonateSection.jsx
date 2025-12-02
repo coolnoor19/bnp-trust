@@ -67,6 +67,12 @@ const DonateSection = () => {
             <p className="text-gray-600 text-lg mt-4">
               Every rupee you give becomes a seed of kindness.  
               Together, we uplift children, empower women, spread nourishment,  
+              and build a harmonious community.Every rupee you give becomes a seed of kindness.  
+              Together, we uplift children, empower women, spread nourishment,  
+              and build a harmonious community.Every rupee you give becomes a seed of kindness.  
+              Together, we uplift children, empower women, spread nourishment,  
+              and build a harmonious community.Every rupee you give becomes a seed of kindness.  
+              Together, we uplift children, empower women, spread nourishment,  
               and build a harmonious community.
             </p>
           </motion.div>

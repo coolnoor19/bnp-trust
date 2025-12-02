@@ -47,7 +47,7 @@ const whatWeDoData = [
     desc: "Delivering fresh meals and essential nutrition to vulnerable families.",
     icon: <Utensils size={48} strokeWidth={1.5} />,
     gradient: "linear-gradient(135deg,#FFE3BA,#FFD29C)",
-    image: "/nutrition.jpg",
+    image: "/8.png",
   },
   {
     title: "Women Empowerment",
@@ -61,14 +61,14 @@ const whatWeDoData = [
     desc: "Medical camps, health checkups, and emergency care support.",
     icon: <Stethoscope size={48} strokeWidth={1.5} />,
     gradient: "linear-gradient(135deg,#DAFCEB,#C6F9DF)",
-    image: "/healthcare.jpg",
+    image: "/9.png",
   },
   {
     title: "Community Development",
     desc: "Building stronger communities with local leadership and resilience.",
     icon: <UsersRound size={48} strokeWidth={1.5} />,
     gradient: "linear-gradient(135deg,#FFF3C9,#FFE99C)",
-    image: "/community.jpg",
+    image: "/10.png",
   },
 ];
 
