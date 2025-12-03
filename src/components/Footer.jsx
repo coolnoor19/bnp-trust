@@ -19,6 +19,7 @@ const Footer = () => {
             viewport={{ once: true }}
           />
 
+
           <motion.p
             className="text-gray-300 text-sm leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
