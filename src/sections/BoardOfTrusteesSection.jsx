@@ -36,131 +36,105 @@ const BoardOfTrusteesSection = () => {
     {
       serialNo: 1,
       name: "Shri Tara Ranjan Patnaik",
-      designation: "Chairman",
+      designation: "Chairman, Trustees",
       fathersName: "Shri Padmanav Patnaik",
       address: "Plot No-2132/5058, Tankapani Road, BJB Nagar, Bhubaneswar-751014",
-      age: 72,
-      aadharNo: "",
       img: "/np.jpg",
     },
     {
       serialNo: 2,
       name: "Shri Dharmaditya Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Chita Ranjan Patnaik",
       address: "70, Forest Park, Bhubaneswar-751009",
-      age: 60,
-      aadharNo: "918263578035",
       img: "/np.jpg",
     },
     {
       serialNo: 3,
       name: "Shri Dibyalok Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Chita Ranjan Patnaik",
       address: "70, Forest Park, Bhubaneswar-751009",
-      age: 54,
-      aadharNo: "306057596162",
       img: "/np.jpg",
     },
     {
       serialNo: 4,
       name: "Shri Somjit Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Suranjan Patnaik",
       address: "Flat No-G 06, Block-C Ramky Towers, Gachibowli, VTC- Gochibowli, Dist- K. V. Rangaready, State- Telangana-500032",
-      age: 54,
-      aadharNo: "847817567438",
       img: "/np.jpg",
     },
     {
       serialNo: 5,
       name: "Shri Devjyoti Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Niranjan Patnaik",
       address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
-      age: 54,
-      aadharNo: "324656868725",
       img: "/np.jpg",
     },
     {
       serialNo: 6,
       name: "Shri Navajyoti Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Niranjan Patnaik",
       address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
-      age: 53,
-      aadharNo: "356932110257",
       img: "/np.jpg",
     },
     {
       serialNo: 7,
       name: "Shri Abhishek Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Biswaranjan Patnaik",
       address: "BB-16, Civil Township Rourkela-769004",
-      age: 46,
-      aadharNo: "948827060083",
       img: "/np.jpg",
     },
     {
       serialNo: 8,
       name: "Shri Anshuman Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Dipti Ranjan Patnaik",
       address: "808, ARCON RETREAT, Patia Bhubaneswar-751031",
-      age: 46,
-      aadharNo: "376468550854",
       img: "/np.jpg",
     },
     {
       serialNo: 9,
       name: "Shri Anurag Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Dipti Ranjan Patnaik",
       address: "A/6, Commercial Estate, Civil Township Rourkela, Sundargarh, Odisha--769004",
-      age: 43,
-      aadharNo: "942932781670",
       img: "/np.jpg",
     },
     {
       serialNo: 10,
       name: "Shri Parthajit Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Tara Ranjan Patnaik",
       address: "Plot No-2132/5058, Tankapani Road, B J B Nagar, Bhubaneswar-751014",
-      age: 42,
-      aadharNo: "362456049820",
       img: "/np.jpg",
     },
     {
       serialNo: 11,
       name: "Ms. Adyasha Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Prava Ranjan Patnaik",
       address: "Plot No-2132/5058, Tankapani Road, B J B Nagar, Bhubaneswar-751014",
-      age: 40,
-      aadharNo: "882903374464",
       img: "/np.jpg",
     },
     {
       serialNo: 12,
       name: "Shri Anupam Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Amiya Ranjan Patnaik",
       address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
-      age: 37,
-      aadharNo: "552721163068",
       img: "/np.jpg",
     },
     {
       serialNo: 13,
       name: "Ms. Tanaya Patnaik",
-      designation: "",
+      designation: "Trustees",
       fathersName: "Shri Soumya Ranjan Patnaik",
       address: "185 VIP Area, IRC Village, Nayapalli, Bhubaneswar-751015",
-      age: 36,
-      aadharNo: "216601938646",
       img: "/np.jpg",
     },
   ];
@@ -261,8 +235,8 @@ const BoardOfTrusteesSection = () => {
                 />
                 <h4 className="text-lg font-bold text-[#0A4C8B]">
                   {t.name}
-                  {t.designation && ` (${t.designation})`}
                 </h4>
+                <p className="text-black-500 text-md mt-1">{t.designation}</p>
               </div>
 
               <div className="space-y-2 text-sm">
@@ -274,16 +248,6 @@ const BoardOfTrusteesSection = () => {
                   <span className="font-semibold">Address:</span>{" "}
                   <span className="text-gray-600">{t.address}</span>
                 </p>
-                <p className="text-gray-700">
-                  <span className="font-semibold">Age:</span>{" "}
-                  <span className="text-gray-600">{t.age}</span>
-                </p>
-                {t.aadharNo && (
-                  <p className="text-gray-700">
-                    <span className="font-semibold">Aadhar No:</span>{" "}
-                    <span className="text-gray-600">{t.aadharNo}</span>
-                  </p>
-                )}
               </div>
             </motion.div>
           ))}
