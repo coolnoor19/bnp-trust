@@ -6,6 +6,8 @@ import {
   HandHeart,
   UtensilsCrossed,
   Users,
+  Leaf,
+  HeartPulse,
 } from "lucide-react";
 
 export default function Programs() {
@@ -42,13 +44,29 @@ export default function Programs() {
       hueA: 120,
       hueB: 160,
     },
+    {
+      icon: <Leaf size={80} strokeWidth={1.5} />,
+      title: "Envirmonmental Conservation",
+      desc: "Protecting and preserving natural ecosystems for future generations.",
+      img: "/101.jpg",
+      hueA: 70,
+      hueB: 110,
+    },
+    {
+      icon: <HeartPulse size={80} strokeWidth={1.5} />,
+      title: "healthcare initiatives",
+      desc: "Providing medical care and health resources to underserved communities.",
+      img: "/9.png",
+      hueA: 160,
+      hueB: 200,
+    },
   ];
 
   return (
     // <section className="relative w-full py-24 md:py-32 overflow-hidden">
     <section
-  className="relative w-full py-24 md:py-32 overflow-hidden bg-gradient-to-br from-[#CFE8FF] via-[#D7F8E4] to-[#F1F8FF] animate-bgGlow"
->
+      className="relative w-full py-24 md:py-32 overflow-hidden bg-gradient-to-br from-[#CFE8FF] via-[#D7F8E4] to-[#F1F8FF] animate-bgGlow"
+    >
       {/* DOTTED BACKGROUND */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -101,7 +119,7 @@ function ProgramCard({ title, desc, img, icon, hueA, hueB, i }) {
         overflow: "hidden",
         position: "relative",
         paddingTop: 20,
-paddingBottom: 80, 
+        paddingBottom: 80,
       }}
     >
       {/* SPLASH BACKGROUND */}

@@ -56,7 +56,7 @@ const ContactSection = () => {
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-        
+
         {/* Heading */}
         <div className="text-center mb-14">
           <div style={{ fontFamily: "'Gloria Hallelujah', cursive" }}>
@@ -79,7 +79,7 @@ const ContactSection = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
+
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -105,10 +105,23 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <MapPin size={28} className="text-[#0F72CE]" />
-                <p className="text-lg leading-relaxed">
-                  N2, Block N2, Irc, Nayapalli, Bhubaneswar, Odisha 751015 , India
-                </p>
+                <MapPin size={28} className="text-[#0F72CE] mt-1" />
+                <div>
+                  <p className="text-lg font-bold text-[#0F72CE]">Registered Office</p>
+                  <p className="text-lg leading-relaxed">
+                    N2/29, Block N2, Irc Village, Nayapalli, Bhubaneswar, Odisha 751015 , India
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin size={28} className="text-[#0F72CE] mt-1" />
+                <div>
+                  <p className="text-lg font-bold text-[#0F72CE]">Head Office</p>
+                  <p className="text-lg leading-relaxed">
+                    FALCON HOUSE, A/22, Cuttack Puri Road, Bhubaneswar-751006
+                  </p>
+                </div>
               </div>
 
             </div>

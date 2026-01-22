@@ -28,7 +28,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             BNP Charitable Trust empowers communities through education,
-            nutrition, women empowerment and healthcare.  
+            nutrition, women empowerment and healthcare.
             Together, we create change that lasts.
           </motion.p>
         </div>
@@ -66,8 +66,18 @@ const Footer = () => {
               <Mail size={16} /> support@bnpcharity.org
             </li>
             <li className="flex items-start gap-2">
-              <MapPin size={18} />  
-              123 Hope Street, Mumbai, Maharashtra
+              <MapPin size={18} className="mt-1 shrink-0" />
+              <div>
+                <span className="block font-semibold text-[#5CC9FF]">Registered Office:</span>
+                N2/29, Block N2, Irc Village, Nayapalli, Bhubaneswar, Odisha 751015 , India
+              </div>
+            </li>
+            <li className="flex items-start gap-2">
+              <MapPin size={18} className="mt-1 shrink-0" />
+              <div>
+                <span className="block font-semibold text-[#5CC9FF]">Head Office:</span>
+                FALCON HOUSE, A/22, Cuttack Puri Road, Bhubaneswar-751006
+              </div>
             </li>
           </ul>
         </motion.div>

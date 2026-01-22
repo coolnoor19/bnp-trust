@@ -6,6 +6,7 @@ import {
   HeartHandshake,
   Stethoscope,
   UsersRound,
+  Leaf,
 } from "lucide-react";
 
 // SplitText animation
@@ -70,6 +71,13 @@ const whatWeDoData = [
     gradient: "linear-gradient(135deg,#FFF3C9,#FFE99C)",
     image: "/10.png",
   },
+  {
+    title: "Envirmonmental Conservation",
+    desc: "Protecting natural resources and promoting sustainable practices.",
+    icon: <Leaf size={48} strokeWidth={1.5} />,
+    gradient: "linear-gradient(135deg,#D7EFFF,#B9E6FF)",
+    image: "/101.jpg",
+  },
 ];
 
 const WhatWeDo = () => {
@@ -100,7 +108,6 @@ const WhatWeDo = () => {
       />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-
         {/* Heading */}
         <div className="text-center mb-14">
           <div style={{ fontFamily: "'Gloria Hallelujah', cursive" }}>
@@ -117,8 +124,8 @@ const WhatWeDo = () => {
             viewport={{ once: true }}
             className="text-gray-600 max-w-2xl mx-auto mt-4 text-lg"
           >
-            Empowering communities through education, nourishment,
-            healthcare, equality, and sustainable development.
+            Empowering communities through education, nourishment, healthcare,
+            equality, and sustainable development.
           </motion.p>
         </div>
 
@@ -163,7 +170,6 @@ const WhatWeDo = () => {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

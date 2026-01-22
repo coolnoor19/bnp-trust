@@ -396,7 +396,7 @@ const MissionPageSection = () => {
             “Impact begins with you.”
           </h3>
           <p className="text-white/90 text-lg max-w-3xl mx-auto">
-            Every contribution — big or small — becomes a stepping stone  
+            Every contribution — big or small — becomes a stepping stone
             toward a brighter future for those who need it most.
           </p>
         </motion.div>
@@ -549,6 +549,329 @@ const MissionPageSection = () => {
         </div>
 
 
+        {/* ================= OUR OBJECTIVES ================= */}
+        <div className="mt-32">
+          <motion.h3
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            style={{ fontFamily: "'Gloria Hallelujah', cursive" }}
+            className="text-center text-3xl md:text-4xl text-[#0A4C8B] font-extrabold mb-6"
+          >
+            Our Objectives
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-center text-gray-600 max-w-3xl mx-auto mb-16 text-lg"
+          >
+            The mission of BNP Charitable Trust is built on purpose-driven objectives designed to empower communities and create lasting impact.
+          </motion.p>
+
+          {/* Primary Objects */}
+          <div className="mb-20">
+            <motion.h4
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-2xl md:text-3xl font-bold text-[#0F72CE] mb-10"
+            >
+              Primary Objects
+            </motion.h4>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+              {/* Primary Object 1 */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 shadow-xl border-2 border-blue-100 hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0F72CE] text-white flex items-center justify-center text-xl font-bold">
+                    i
+                  </div>
+                  <h5 className="text-lg font-bold text-[#0F72CE]">Education & Development</h5>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  To undertake and support relief or assistance of any kind relating to education, literary excellence, sports, people engaged in farming, public health including the creation or upgradation of facilities, funding activities or any other type of support.
+                </p>
+              </motion.div>
+
+              {/* Primary Object 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 shadow-xl border-2 border-purple-100 hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0F72CE] text-white flex items-center justify-center text-xl font-bold">
+                    ii
+                  </div>
+                  <h5 className="text-lg font-bold text-[#0F72CE]">Financial Assistance</h5>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  To render financial assistance, provide grants or payment of money or take such other steps as may be deemed necessary by the Board of Trustees including assistance to charitable organizations with charitable objectives.
+                </p>
+              </motion.div>
+
+              {/* Primary Object 3 */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-8 shadow-xl border-2 border-green-100 hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-[#0F72CE] text-white flex items-center justify-center text-xl font-bold">
+                    iii
+                  </div>
+                  <h5 className="text-lg font-bold text-[#0F72CE]">Aligned Activities</h5>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  To undertake any other activity which is not inconsistent with the above objectives, ensuring all efforts contribute to the greater good of society.
+                </p>
+              </motion.div>
+
+            </div>
+          </div>
+
+          {/* Trust Initiatives */}
+          <div>
+            <motion.h4
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-2xl md:text-3xl font-bold text-[#0F72CE] mb-10"
+            >
+              Trust Initiatives & Programs
+            </motion.h4>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              {/* Initiative 1 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-blue-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    1
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Regional Development Schemes</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Schemes spreading across different blocks of Odisha, specifically the 15 blocks of Keonjhar District and Bonth and Bhandari Pokahri Blocks of Bhadrak District.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.05 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-purple-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    2
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Academic Excellence Awards</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Cash prizes for exam toppers in different streams clearing Board and University level exams, decided by a committee formed by the Chairman.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 3 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-green-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    3
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Manoj Das Sahitya Award</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Cash prize award for eminent writers to be decided by a committee formed by the Chairman of the Trust.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 4 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-yellow-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    4
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Student Financial Support</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Monthly financial assistance to meritorious and underprivileged students in Engineering, Medical, Diploma Engineering, Bachelor's, Post Graduation, and Nursing streams.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 5 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-orange-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    5
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Best Cultivator Awards</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Cash prize awards for the best cultivator in all 30 districts of Odisha, promoting agricultural excellence.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 6 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.25 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-red-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    6
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Sports Excellence Recognition</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Cash prize awards to Odia Medal Winners of National and International sports, celebrating athletic achievement.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 7 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-pink-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    7
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Charitable Organization Support</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Annual cash prize awards to KMBB and Ama Odissa for pursuing their charitable objectives.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Initiative 8 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.35 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-full bg-teal-100 text-[#0F72CE] flex items-center justify-center font-bold flex-shrink-0">
+                    8
+                  </div>
+                  <div>
+                    <h6 className="font-bold text-[#0F72CE] mb-2">Direct Benefit Programs</h6>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Direct benefits to particular programmes, institutions, or persons aligned with the above objectives.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+            </div>
+          </div>
+
+        </div>
+
+        {/* Inclusivity Statement */}
+        {/* Inclusivity Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-24 relative"
+        >
+          {/* Gradient Border/Glow Effect */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 rounded-3xl blur opacity-25"></div>
+
+          <div className="relative bg-white rounded-3xl p-10 md:p-12 shadow-2xl border border-gray-100 text-center overflow-hidden">
+
+            {/* Decorative Background Elements */}
+            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500"></div>
+            <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-50 rounded-full blur-3xl opacity-60"></div>
+            <div className="absolute -right-10 -top-10 w-40 h-40 bg-purple-50 rounded-full blur-3xl opacity-60"></div>
+
+            {/* Icon/Symbol */}
+            <div className="mb-6 flex justify-center relative z-10">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-full flex items-center justify-center text-3xl shadow-inner border border-white">
+                🤝
+              </div>
+            </div>
+
+            <h4 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 relative z-10">
+              Unwavering Inclusivity
+            </h4>
+
+            <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto relative z-10 italic">
+              "The benefit of the Objects would be available to the general public irrespective of caste, creed, language, religion, region, sex."
+            </p>
+          </div>
+        </motion.div>
+
+
+
+
         {/* ================= FUTURE COMMITMENT ================= */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -562,7 +885,7 @@ const MissionPageSection = () => {
           </h3>
           <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
             Our mission stretches far beyond temporary help.
-            We work to create systems, support, and opportunities  
+            We work to create systems, support, and opportunities
             that transform lives for generations to come.
             <br /><br />
             <strong>Every smile, every future, every empowered life — begins with you.</strong>
@@ -570,7 +893,7 @@ const MissionPageSection = () => {
         </motion.div>
 
       </div>
-    </section>
+    </section >
   );
 };
 
