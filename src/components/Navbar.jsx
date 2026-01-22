@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   // { name: "Home", href: "/" },
@@ -9,7 +10,7 @@ const navLinks = [
   { name: "Mission", href: "/mission" },
   { name: "Awards", href: "/awards" },
   { name: "Programs", href: "/board-of-trustees" },
-  // { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -25,45 +26,52 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
         {/* Logo */}
-        <motion.a
-          href="/"
+        <motion.div
           className="flex items-center gap-2"
           whileHover={{ scale: 1.03 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <img
-            src="/bnplogo1.png"
-            alt="BNP Logo"
-            className="h-14 w-auto drop-shadow-sm"
-          />
-          <span className="text-xl font-semibold text-[#0F72CE] tracking-wide">
-            BNP Charitable Trust
-          </span>
-        </motion.a>
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/bnplogo1.png"
+              alt="BNP Logo"
+              className="h-14 w-auto drop-shadow-sm"
+            />
+            <span className="text-xl font-semibold text-[#0F72CE] tracking-wide">
+              BNP Charitable Trust
+            </span>
+          </Link>
+        </motion.div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <motion.a
+            <motion.div
               key={link.name}
-              href={link.href}
-              className="text-[#4A5568] hover:text-[#0A4C8B] font-medium text-sm tracking-wide"
               whileHover={{ y: -2 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              {link.name}
-            </motion.a>
+              <Link
+                to={link.href}
+                className="text-[#4A5568] hover:text-[#0A4C8B] font-medium text-sm tracking-wide"
+              >
+                {link.name}
+              </Link>
+            </motion.div>
           ))}
 
           {/* Donate Button */}
-          <motion.a
-            href="/donate"
-            className="px-4 py-2 bg-[#0F72CE] text-white rounded-lg shadow-md hover:bg-[#0A4C8B] text-sm font-medium"
+          <motion.div
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.97 }}
           >
-            Donate
-          </motion.a>
+            <Link
+              to="/donate"
+              className="px-4 py-2 bg-[#0F72CE] text-white rounded-lg shadow-md hover:bg-[#0A4C8B] text-sm font-medium"
+            >
+              Donate
+            </Link>
+          </motion.div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -87,23 +95,23 @@ const Navbar = () => {
           >
             <div className="flex flex-col p-4 space-y-3">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setOpen(false)}
                   className="text-[#4A5568] hover:text-[#0F72CE] text-base font-medium"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
 
-              <a
-                href="#donate"
+              <Link
+                to="/donate"
                 className="px-4 py-2 bg-[#0F72CE] text-white rounded-lg text-center font-medium shadow-sm"
                 onClick={() => setOpen(false)}
               >
                 Donate
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

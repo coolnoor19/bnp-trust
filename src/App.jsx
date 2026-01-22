@@ -19,6 +19,8 @@ import BoardOfTrustees from "./pages/BoardOfTrustees";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </BrowserRouter>
   );
