@@ -34,18 +34,133 @@ const SplitText = ({ text, delayStep = 0.03, className }) => {
 const BoardOfTrusteesSection = () => {
   const trustees = [
     {
-      name: "Niranjan Patnaik",
-      role: "Founder & Chairman",
+      serialNo: 1,
+      name: "Shri Tara Ranjan Patnaik",
+      designation: "Chairman",
+      fathersName: "Shri Padmanav Patnaik",
+      address: "Plot No-2132/5058, Tankapani Road, BJB Nagar, Bhubaneswar-751014",
+      age: 72,
+      aadharNo: "",
       img: "/np.jpg",
     },
     {
-      name: "Niranjan Patnaik",
-      role: "Co-Founder, Women Empowerment Lead",
+      serialNo: 2,
+      name: "Shri Dharmaditya Patnaik",
+      designation: "",
+      fathersName: "Shri Chita Ranjan Patnaik",
+      address: "70, Forest Park, Bhubaneswar-751009",
+      age: 60,
+      aadharNo: "918263578035",
       img: "/np.jpg",
     },
     {
-      name: "Niranjan Patnaik",
-      role: "Finance & Operations Director",
+      serialNo: 3,
+      name: "Shri Dibyalok Patnaik",
+      designation: "",
+      fathersName: "Shri Chita Ranjan Patnaik",
+      address: "70, Forest Park, Bhubaneswar-751009",
+      age: 54,
+      aadharNo: "306057596162",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 4,
+      name: "Shri Somjit Patnaik",
+      designation: "",
+      fathersName: "Shri Suranjan Patnaik",
+      address: "Flat No-G 06, Block-C Ramky Towers, Gachibowli, VTC- Gochibowli, Dist- K. V. Rangaready, State- Telangana-500032",
+      age: 54,
+      aadharNo: "847817567438",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 5,
+      name: "Shri Devjyoti Patnaik",
+      designation: "",
+      fathersName: "Shri Niranjan Patnaik",
+      address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
+      age: 54,
+      aadharNo: "324656868725",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 6,
+      name: "Shri Navajyoti Patnaik",
+      designation: "",
+      fathersName: "Shri Niranjan Patnaik",
+      address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
+      age: 53,
+      aadharNo: "356932110257",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 7,
+      name: "Shri Abhishek Patnaik",
+      designation: "",
+      fathersName: "Shri Biswaranjan Patnaik",
+      address: "BB-16, Civil Township Rourkela-769004",
+      age: 46,
+      aadharNo: "948827060083",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 8,
+      name: "Shri Anshuman Patnaik",
+      designation: "",
+      fathersName: "Shri Dipti Ranjan Patnaik",
+      address: "808, ARCON RETREAT, Patia Bhubaneswar-751031",
+      age: 46,
+      aadharNo: "376468550854",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 9,
+      name: "Shri Anurag Patnaik",
+      designation: "",
+      fathersName: "Shri Dipti Ranjan Patnaik",
+      address: "A/6, Commercial Estate, Civil Township Rourkela, Sundargarh, Odisha--769004",
+      age: 43,
+      aadharNo: "942932781670",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 10,
+      name: "Shri Parthajit Patnaik",
+      designation: "",
+      fathersName: "Shri Tara Ranjan Patnaik",
+      address: "Plot No-2132/5058, Tankapani Road, B J B Nagar, Bhubaneswar-751014",
+      age: 42,
+      aadharNo: "362456049820",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 11,
+      name: "Ms. Adyasha Patnaik",
+      designation: "",
+      fathersName: "Shri Prava Ranjan Patnaik",
+      address: "Plot No-2132/5058, Tankapani Road, B J B Nagar, Bhubaneswar-751014",
+      age: 40,
+      aadharNo: "882903374464",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 12,
+      name: "Shri Anupam Patnaik",
+      designation: "",
+      fathersName: "Shri Amiya Ranjan Patnaik",
+      address: "N-2/29, IRC Village, Nayapalli, Bhubaneswar-751015",
+      age: 37,
+      aadharNo: "552721163068",
+      img: "/np.jpg",
+    },
+    {
+      serialNo: 13,
+      name: "Ms. Tanaya Patnaik",
+      designation: "",
+      fathersName: "Shri Soumya Ranjan Patnaik",
+      address: "185 VIP Area, IRC Village, Nayapalli, Bhubaneswar-751015",
+      age: 36,
+      aadharNo: "216601938646",
       img: "/np.jpg",
     },
   ];
@@ -128,28 +243,48 @@ const BoardOfTrusteesSection = () => {
           Meet Our Trustees
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {trustees.map((t, idx) => (
             <motion.div
               key={idx}
-              className="rounded-3xl bg-white p-6 shadow-xl border border-gray-100 text-center"
+              className="rounded-3xl bg-white p-6 shadow-xl border border-gray-100"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <img
-                src={t.img}
-                alt={t.name}
-                className="w-40 h-40 mx-auto rounded-full object-cover mb-4 shadow-md"
-              />
+              <div className="text-center mb-4">
+                <img
+                  src={t.img}
+                  alt={t.name}
+                  className="w-32 h-32 mx-auto rounded-full object-cover mb-4 shadow-md"
+                />
+                <h4 className="text-lg font-bold text-[#0A4C8B]">
+                  {t.name}
+                  {t.designation && ` (${t.designation})`}
+                </h4>
+              </div>
 
-              <h4 className="text-xl font-bold text-[#0A4C8B]">{t.name}</h4>
-              <p className="text-gray-500 text-sm mb-3">{t.role}</p>
-
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Dedicated to community upliftment, transparency, and impactful humanitarian efforts.
-              </p>
+              <div className="space-y-2 text-sm">
+                <p className="text-gray-700">
+                  <span className="font-semibold">Father's/Husband's Name:</span>{" "}
+                  <span className="text-gray-600">{t.fathersName}</span>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Address:</span>{" "}
+                  <span className="text-gray-600">{t.address}</span>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Age:</span>{" "}
+                  <span className="text-gray-600">{t.age}</span>
+                </p>
+                {t.aadharNo && (
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Aadhar No:</span>{" "}
+                    <span className="text-gray-600">{t.aadharNo}</span>
+                  </p>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
